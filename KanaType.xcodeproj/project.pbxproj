@@ -18,6 +18,8 @@
 		497FE57B18836BC400F2334C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497FE55A18836BC400F2334C /* Cocoa.framework */; };
 		497FE58318836BC400F2334C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 497FE58118836BC400F2334C /* InfoPlist.strings */; };
 		497FE58518836BC400F2334C /* KanaTypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 497FE58418836BC400F2334C /* KanaTypeTests.m */; };
+		497FE59018836BD700F2334C /* KanaTypeConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 497FE58E18836BD700F2334C /* KanaTypeConverter.cpp */; };
+		497FE59318836E3C00F2334C /* mcbKanaTypeConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 497FE59218836E3C00F2334C /* mcbKanaTypeConverter.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		497FE58018836BC400F2334C /* KanaTypeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KanaTypeTests-Info.plist"; sourceTree = "<group>"; };
 		497FE58218836BC400F2334C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		497FE58418836BC400F2334C /* KanaTypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanaTypeTests.m; sourceTree = "<group>"; };
+		497FE58E18836BD700F2334C /* KanaTypeConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KanaTypeConverter.cpp; sourceTree = "<group>"; };
+		497FE58F18836BD700F2334C /* KanaTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanaTypeConverter.h; sourceTree = "<group>"; };
+		497FE59118836E3C00F2334C /* mcbKanaTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcbKanaTypeConverter.h; sourceTree = "<group>"; };
+		497FE59218836E3C00F2334C /* mcbKanaTypeConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mcbKanaTypeConverter.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 			children = (
 				497FE56C18836BC400F2334C /* mcbAppDelegate.h */,
 				497FE56D18836BC400F2334C /* mcbAppDelegate.m */,
+				497FE59118836E3C00F2334C /* mcbKanaTypeConverter.h */,
+				497FE59218836E3C00F2334C /* mcbKanaTypeConverter.mm */,
+				497FE58F18836BD700F2334C /* KanaTypeConverter.h */,
+				497FE58E18836BD700F2334C /* KanaTypeConverter.cpp */,
 				497FE56F18836BC400F2334C /* MainMenu.xib */,
 				497FE57218836BC400F2334C /* Images.xcassets */,
 				497FE56118836BC400F2334C /* Supporting Files */,
@@ -253,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497FE59318836E3C00F2334C /* mcbKanaTypeConverter.mm in Sources */,
+				497FE59018836BD700F2334C /* KanaTypeConverter.cpp in Sources */,
 				497FE56718836BC400F2334C /* main.m in Sources */,
 				497FE56E18836BC400F2334C /* mcbAppDelegate.m in Sources */,
 			);

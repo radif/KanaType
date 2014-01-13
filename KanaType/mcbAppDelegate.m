@@ -7,12 +7,14 @@
 //
 
 #import "mcbAppDelegate.h"
+#import "mcbKanaTypeConverter.h"
 
 @implementation mcbAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NSLog(@"%@",[mcbKanaTypeConverter convertABCToKana:@"Hello guys hello 123, this is Radif"]);
 }
 
 @end
