@@ -28,9 +28,9 @@
     
     _statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
-    _statusBar.title = @"KanaType";
+    _statusBar.title = @"カ";
     
-    //_statusBar.image =
+    //_statusBar.image = [NSImage imageNamed:@"menuImage"];
     
     _statusBar.menu = _statusMenu;
     _statusBar.highlightMode = YES;
