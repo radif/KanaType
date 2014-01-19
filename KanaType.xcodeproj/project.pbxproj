@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493BF84C188C8EE700D106B2 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BF847188C8EE700D106B2 /* DDHotKeyCenter.m */; };
+		493BF84E188C8EE700D106B2 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BF84B188C8EE700D106B2 /* DDHotKeyUtilities.m */; };
+		493BF850188C8EF400D106B2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BF84F188C8EF400D106B2 /* Carbon.framework */; };
 		497FE55B18836BC400F2334C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497FE55A18836BC400F2334C /* Cocoa.framework */; };
 		497FE56518836BC400F2334C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 497FE56318836BC400F2334C /* InfoPlist.strings */; };
 		497FE56718836BC400F2334C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 497FE56618836BC400F2334C /* main.m */; };
@@ -33,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		493BF846188C8EE700D106B2 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		493BF847188C8EE700D106B2 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		493BF84A188C8EE700D106B2 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		493BF84B188C8EE700D106B2 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
+		493BF84F188C8EF400D106B2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		497FE55718836BC400F2334C /* KanaType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497FE55A18836BC400F2334C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		497FE55D18836BC400F2334C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				497FE55B18836BC400F2334C /* Cocoa.framework in Frameworks */,
+				493BF850188C8EF400D106B2 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493BF845188C8EE700D106B2 /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				493BF846188C8EE700D106B2 /* DDHotKeyCenter.h */,
+				493BF847188C8EE700D106B2 /* DDHotKeyCenter.m */,
+				493BF84A188C8EE700D106B2 /* DDHotKeyUtilities.h */,
+				493BF84B188C8EE700D106B2 /* DDHotKeyUtilities.m */,
+			);
+			path = DDHotKey;
+			sourceTree = "<group>";
+		};
 		497FE54E18836BC400F2334C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,7 @@
 		497FE55918836BC400F2334C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				493BF84F188C8EF400D106B2 /* Carbon.framework */,
 				497FE55A18836BC400F2334C /* Cocoa.framework */,
 				497FE57918836BC400F2334C /* XCTest.framework */,
 				497FE55C18836BC400F2334C /* Other Frameworks */,
@@ -121,6 +142,7 @@
 		497FE56018836BC400F2334C /* KanaType */ = {
 			isa = PBXGroup;
 			children = (
+				493BF845188C8EE700D106B2 /* DDHotKey */,
 				497FE56C18836BC400F2334C /* mcbAppDelegate.h */,
 				497FE56D18836BC400F2334C /* mcbAppDelegate.m */,
 				497FE59118836E3C00F2334C /* mcbKanaTypeConverter.h */,
@@ -263,10 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493BF84C188C8EE700D106B2 /* DDHotKeyCenter.m in Sources */,
 				497FE59318836E3C00F2334C /* mcbKanaTypeConverter.mm in Sources */,
 				497FE59018836BD700F2334C /* KanaTypeConverter.cpp in Sources */,
 				497FE56718836BC400F2334C /* main.m in Sources */,
 				497FE56E18836BC400F2334C /* mcbAppDelegate.m in Sources */,
+				493BF84E188C8EE700D106B2 /* DDHotKeyUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +501,7 @@
 				497FE58A18836BC400F2334C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		497FE58B18836BC400F2334C /* Build configuration list for PBXNativeTarget "KanaTypeTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +510,7 @@
 				497FE58D18836BC400F2334C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

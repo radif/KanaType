@@ -50,7 +50,7 @@ namespace KanaType{namespace Converter{
         {'i',"エ"},
         {'j',"丁"},
         {'k',"ケ"},
-        {'l',"レ"},
+        {'l',"乚"},
         {'m',"巾"},
         {'n',"门"},
         {'o',"ロ"},
