@@ -8,3 +8,4 @@ To quit, locate the menu at the status bar and select "Quit"
 
 ##credits:
 	1. DDHotKey https://github.com/davedelong/DDHotKey
+	
